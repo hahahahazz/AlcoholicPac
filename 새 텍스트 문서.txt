@@ -1,0 +1,22 @@
+DB
+
+CREATE TABLE review_tbl (
+    review_id VARCHAR2(10) PRIMARY KEY,
+    user_id VARCHAR2(20),
+    product_no VARCHAR2(10),
+    item_no VARCHAR2(10),
+    review_contents  VARCHAR2(200),
+    rating  VARCHAR2(3),
+    review_date date DEFAULT sysdate,
+    title  VARCHAR2(50)
+);
+drop TABLE review_tbl;
+
+INSERT INTO review_tbl  (review_id, user_id, product_no, item_no, review_contents,rating,title)
+VALUES ('m001', 'NEW반지의 제왕','SF' , '23000', '1999','1','2');
+INSERT INTO review_tbl (review_id, user_id, product_no, item_no, review_contents,rating,title)
+VALUES  ('m002', 'NEW매트릭스','SF' , '39000', '1982','3','4');
+INSERT INTO review_tbl (review_id, user_id, product_no, item_no, review_contents,rating,title)
+VALUES ('m003', 'NEW인터스텔라','SF' , '18000', '2005','5','6');
+ 
+commit;
