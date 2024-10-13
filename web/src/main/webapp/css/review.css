@@ -1,0 +1,209 @@
+@charset "UTF-8";
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(252, 245, 223, 0.95);
+}
+
+/* 헤더부분 시작 */
+header {
+    height: 160px;
+    background-color: rgba(252, 245, 223, 0.95);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    letter-spacing: 5px;
+}
+
+.logo {
+    width: 320px;
+    height: 65px;
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.menu {
+    width: 440px;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 20px;
+    letter-spacing: 0px;
+    padding: 20px;
+}
+
+.main_menu {
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: calc(50% - 500px);
+    background-color: rgba(252, 245, 223, 0.95);
+    opacity: 99%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 1000px;
+    height: 250px;
+    z-index: 999;
+}
+
+.menu ul li ul li {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0;
+    margin: 25px;
+}
+
+.menu ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(250, 220, 100);
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.menu ul li ul li:hover {
+    text-decoration: none;
+}
+
+.menu ul li ul li a:hover {
+    text-decoration: none;
+    color: rgb(250, 220, 100);
+}
+
+.login {
+    width: auto;
+    position: absolute;
+    right: 95px;
+    top: 45px;
+}
+
+.log_btn a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    text-decoration-line: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 헤더 부분 끝 */
+
+
+
+/* 메인 부분 시작 */
+main {
+    min-height: 315px;
+    padding: 0 190px 0 190px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    padding: 15px 0 20px 0;
+    width: 500px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 40px;
+}
+
+table {
+    border-bottom: 1px solid gray;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+th {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-weight: 500;
+    padding: 0 20px 0 20px;
+}
+
+th:nth-child(1) {
+    border-left: none;
+}
+
+th:nth-child(7) {
+    border-right: none;
+}
+
+.register a {
+    font-size: 20px;
+    color: rgb(250, 220, 100);
+}
+
+.review_info th {
+    font-size: 15px;
+    padding: 0;
+    font-weight: 100;
+}
+
+.update,
+.delete {
+    font-weight: 500;
+}
+.new_wrap{
+    width: 718px;
+    text-align: right;
+    margin-top: 20px;
+    font-weight: 600;
+}
